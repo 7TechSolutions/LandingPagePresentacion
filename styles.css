@@ -261,8 +261,107 @@ a {
   color: black;
 }
 
+
+.tablaPlanes{
+  margin-left: 10%;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family:'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.planCard{
+  background: linear-gradient(135deg,#023f4a 0%,#01687b 50%,#d1cbc6 100%);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 15px 35px 35px rgba(0, 0, 0, 0.5),
+  -15px -35px -35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.planCard:hover {
+  transform: translateY(-10px);
+}
+
+.planCard::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(45deg,#00FFFF,#A2FFFF);
+}
+
+.planHeader{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.planName{
+  font-size: 24px;
+  color: #ddd;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.precio{
+  font-size: 48px;
+  font-weight: 700;
+  color: #00a2ff;
+  margin-bottom: 15px;
+}
+
+.precio span{
+  font-size: 24px;
+  color: #afb6c7
+}
+
+.descripcion{
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.descripcion li{
+  padding: 12px 0;
+  color: #b0b0ba;
+  color: #ccc;
+  border-bottom: 1px solid #666;
+  text-align: center;
+}
+
+.descripcion li:last-child{
+  border-bottom: none;
+}
+.plan-button{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(45deg,#004cff,#00A2FF);
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: transform 0.3 ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
  
+
 .footer {    
   position: relative;
   width: 100%;
