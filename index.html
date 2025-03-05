@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="7-Tech Solutions - Desarrollamos tu página web a medida con planes flexibles y servicios personalizados."
+    />
+
     <title>7TtechSolutions</title>
     <link rel="stylesheet" href="./styles.css" />
     <link
@@ -22,6 +27,13 @@
           />
           <h1>7-Tech Solutions</h1>
         </div>
+        <div class="hamburger">
+          <i class="fa fa-bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </i>
+        </div>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="#" class="nav-link">Inicio</a>
@@ -36,11 +48,6 @@
             <a href="#" class="nav-link">Contact</a>
           </li>
         </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
       </nav>
     </header>
 
@@ -79,7 +86,7 @@
         </p>
       </div>
     </section>
-
+    <hr class="salto-linea" />
     <div class="wrapper">
       <div class="container">
         <input type="radio" name="slide" id="c1" checked />
@@ -127,6 +134,7 @@
         </label>
       </div>
     </div>
+    <hr class="salto-linea" />
 
     <!-- Planes -->
     <div class="planes">
@@ -146,7 +154,6 @@
           <a href="#" class="plan-button">Empezar</a>
         </div>
 
-        
         <!-- plan profesional -->
         <div class="planCard">
           <div class="planHeader">
@@ -180,61 +187,90 @@
         </div>
       </div>
     </div>
+    <hr class="salto-linea" />
+
+    <section class="contact-section" id="contacto">
+      <div class="form-container">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+          <label for="name">Nombre:</label>
+          <textarea
+            class="textarea-name-email"
+            id="name"
+            name="name"
+            required
+            minlength="3"
+            placeholder="Ingresa tu nombre"
+          ></textarea>
+
+          <label for="email">Email:</label>
+          <textarea
+            class="textarea-name-email"
+            id="email"
+            name="email"
+            required
+            placeholder="Ingresa tu email"
+            title="Por favor ingresa un correo electrónico válido."
+          ></textarea>
+
+          <label for="message">Mensaje:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            minlength="10"
+            placeholder="Escribe tu mensaje"
+          ></textarea>
+
+          <button class="contact-button" type="submit">Enviar</button>
+          <p id="status-message"></p>
+        </form>
+      </div>
+    </section>
 
     <section class="footer">
       <div class="footer-row">
         <div class="footer-col">
           <h4>Info</h4>
           <ul class="links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Compressions</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Collection</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h4>Explore</h4>
+          <h4>Contacto</h4>
           <ul class="links">
-            <li><a href="#">Free Designs</a></li>
-            <li><a href="#">Latest Designs</a></li>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Popular Designs</a></li>
-            <li><a href="#">Art Skills</a></li>
-            <li><a href="#">New Uploads</a></li>
+            <li>
+              <i class="fa-solid fa-message"></i
+              ><a href="mailto:7techsolutionsmza@gmail.com"
+                >7techsolutionsmza@gmail.com</a
+              >
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp"></i
+              ><a href="https://wa.me/542615133452">+54 261 5133452</a>
+            </li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h4>Legal</h4>
+          <h4>Redes Sociales</h4>
           <ul class="links">
-            <li><a href="#">Customer Agreement</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">GDPR</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Media Kit</a></li>
+            <li>
+              <i class="fa-brands fa-linkedin"></i><a href="#">LinkedIn</a>
+            </li>
+            <li><i class="fa-brands fa-github"></i><a href="#">GitHub</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Newsletter</h4>
-          <p>
-            Subscribe to our newsletter for a weekly dose of news, updates,
-            helpful tips, and exclusive offers.
-          </p>
-          <form action="#">
-            <input type="text" placeholder="Your email" required />
-            <button type="submit">SUBSCRIBE</button>
-          </form>
-          <div class="icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-          </div>
-        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 7-Tech Solutions. Todos los derechos reservados.</p>
       </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
