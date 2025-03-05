@@ -507,7 +507,7 @@ a {
 }
 
 /*responsive*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px )and (min-width: 430px) {
    
   * {
     margin: 0;
@@ -578,7 +578,7 @@ a {
     display: none;
   }
   /* fin modelos */
-  /* incion planes */
+  /* incio planes */
   .tablaPlanes {
     margin-left: 0;
     display: grid;
@@ -594,4 +594,93 @@ a {
     font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   /* fin planes */
+}
+@media screen and (max-width: 430px) {
+    
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+   
+  .nav-menu {
+    z-index: 1;
+    position: fixed; 
+    left: -100%;
+    min-width: 100%;
+    top: 7rem;
+    flex-direction: column;
+    background-color: #fff; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    list-style-type: none;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    color: black;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger { 
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger span {
+    background-color: #000;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  /* fin header */
+
+  /* inicon modelos */
+  .wrapper {
+    display: none;
+  }
+  /* fin modelos */
+  /* incio planes */
+  .tablaPlanes {
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /* fin planes */
+  
 }
